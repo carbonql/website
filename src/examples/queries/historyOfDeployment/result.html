@@ -1,0 +1,47 @@
+{
+  metadata: {
+    annotations: {
+      deployment.kubernetes.io&#47;revision: <span class="term-fg31">&quot;1&quot;</span> =&gt; <span class="term-fg32">&quot;2&quot;</span>
+    },
+    creationTimestamp: <span class="term-fg31">&quot;2018-02-28T20:15:32Z&quot;</span> =&gt; <span class="term-fg32">&quot;2018-03-13T06:34:36Z&quot;</span>
+    generation: <span class="term-fg31">7</span> =&gt; <span class="term-fg32">3</span>
+    labels: {
+      pod-template-hash: <span class="term-fg31">&quot;2947959670&quot;</span> =&gt; <span class="term-fg32">&quot;1264720760&quot;</span>
+    },
+    name: <span class="term-fg31">&quot;nginx-6f8cf9fbc4&quot;</span> =&gt; <span class="term-fg32">&quot;nginx-56b8c64cb4&quot;</span>
+    resourceVersion: <span class="term-fg31">&quot;263854&quot;</span> =&gt; <span class="term-fg32">&quot;263858&quot;</span>
+    selfLink:
+      <span class="term-fgi90">59,14 </span>inx-<span class="term-fg31">6f8cf9fbc</span><span class="term-fg32">56b8c64cb</span>4
+&nbsp;
+    uid: <span class="term-fg31">&quot;20c50866-1cc4-11e8-9137-080027cfc4d2&quot;</span> =&gt; <span class="term-fg32">&quot;9966f685-2688-11e8-adbb-080027cfc4d2&quot;</span>
+  },
+  spec: {
+    replicas: <span class="term-fg31">0</span> =&gt; <span class="term-fg32">3</span>
+    selector: {
+      matchLabels: {
+        pod-template-hash: <span class="term-fg31">&quot;2947959670&quot;</span> =&gt; <span class="term-fg32">&quot;1264720760&quot;</span>
+      }
+    },
+    template: {
+      metadata: {
+        labels: {
+          pod-template-hash: <span class="term-fg31">&quot;2947959670&quot;</span> =&gt; <span class="term-fg32">&quot;1264720760&quot;</span>
+        }
+      },
+      spec: {
+        containers: [
+          0: {
+            image: <span class="term-fg31">&quot;nginx:1.7.9&quot;</span> =&gt; <span class="term-fg32">&quot;nginx:1.9.1&quot;</span>
+          }
+        ]
+      }
+    }
+  },
+  status: {
+    <span class="term-fg32">availableReplicas: 3</span>
+    <span class="term-fg32">fullyLabeledReplicas: 3</span>
+    observedGeneration: <span class="term-fg31">7</span> =&gt; <span class="term-fg32">3</span>
+    <span class="term-fg32">readyReplicas: 3</span>
+    replicas: <span class="term-fg31">0</span> =&gt; <span class="term-fg32">3</span>
+  }
+}
