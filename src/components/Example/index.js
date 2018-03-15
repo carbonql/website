@@ -18,7 +18,7 @@ const Example = ({ files }) => {
 
   return (
     <div>
-      <div className="row">
+      <div className="row pt-4">
         <div
           className="col markdown"
           dangerouslySetInnerHTML={{
@@ -57,6 +57,7 @@ const Example = ({ files }) => {
           </div>
         </div>
       </div>
+      <hr/>
     </div>
   )
 }
