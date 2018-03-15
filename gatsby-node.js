@@ -26,7 +26,7 @@ exports.onCreateNode = async (
       children: [],
       internal: {
         type: 'Example',
-        contentDigest: 'asdf'
+        contentDigest: node.relativeDirectory,
       }
     };
 
