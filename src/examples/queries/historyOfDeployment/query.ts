@@ -1,5 +1,5 @@
-import {client, query} from "../../../src";
-import * as carbon from "../../../src";
+import {client, query} from "carbonql";
+import * as carbon from "carbonql";
 const jsondiff = require("jsondiffpatch");
 
 const c = client.Client.fromFile(<string>process.env.KUBECONFIG);

@@ -1,7 +1,6 @@
 import {client, query} from "carbonql";
 
 const c = client.Client.fromFile(<string>process.env.KUBECONFIG);
-
 const mySqlVersions = c.core.v1.Pod
   .list("default")
   // Obtain all container image names running in all pods.
