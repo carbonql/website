@@ -1,0 +1,31 @@
+.markdown {
+  blockquote {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+
+    border-left-color: $bd-info;
+
+    h4 { color: $bd-info; }
+  }
+
+  blockquote h4 {
+    margin-top: 0;
+    margin-bottom: .25rem;
+  }
+
+  blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+  blockquote code {
+    border-radius: .25rem;
+  }
+
+  blockquote + blockquote {
+    margin-top: -.25rem;
+  }
+}

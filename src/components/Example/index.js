@@ -20,7 +20,7 @@ const Example = ({ files }) => {
     <div>
       <div className="row">
         <div
-          className="col"
+          className="col markdown"
           dangerouslySetInnerHTML={{
             __html: sections.description.childMarkdownRemark.html
           }} />
