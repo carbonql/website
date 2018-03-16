@@ -3,7 +3,7 @@ tags:
   - ops
 ---
 
-## Diff last two rollouts of an application
+### Diff last two rollouts of an application
 
 Search for a [Deployment][deployment] named `"nginx"`, and obtain the last 2
 revisions in its rollout history. Then use the `jsondiffpatch` library to diff

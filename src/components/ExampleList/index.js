@@ -27,33 +27,39 @@ const ExampleList = ({ examples }) => {
 
   return (
     <div>
-      <h1>Ops</h1>
-      <p>
-        Operators need quick primitives that will help them get visibility into
-        what is happening in their Kubernetes clusters, especially during a
-        livesite incident.
+      <div className="pt-4">
+        <h1>Ops</h1>
+        <p>
+          Operators need quick primitives that will help them get visibility into
+          what is happening in their Kubernetes clusters, especially during a
+          livesite incident.
 
-        This section contains a collection of useful tools that operators can
-        use day-to-day in their jobs to help diagnose such things.
-      </p>
-      <hr/>
-      {_.map(ops, makeNode)}
+          This section contains a collection of useful tools that operators can
+          use day-to-day in their jobs to help diagnose such things.
+        </p>
+        <hr/>
+        {_.map(ops, makeNode)}
+      </div>
 
-      <h1>Governance</h1>
-      <p>
-        CIOs and engineering leadership need the ability to quickly understand
-        how their organization is tracking against important metrics like
-        compliance, security patches, and so on.
+      <div className="pt-4">
+        <h1>Governance</h1>
+        <p>
+          CIOs and engineering leadership need the ability to quickly understand
+          how their organization is tracking against important metrics like
+          compliance, security patches, and so on.
 
-        This section contains a collection of useful tools that governance
-        teams can use to understand and enforce policy decisions on an
-        organizational basis.
-      </p>
-      <hr/>
-      {_.map(governance, makeNode)}
+          This section contains a collection of useful tools that governance
+          teams can use to understand and enforce policy decisions on an
+          organizational basis.
+        </p>
+        <hr/>
+        {_.map(governance, makeNode)}
+      </div>
 
-      <h1>Application Developemnt</h1>
-      {_.map(dev, makeNode)}
+      <div className="pt-4">
+        <h1>Application Developemnt</h1>
+        {_.map(dev, makeNode)}
+      </div>
     </div>
   );
 };
