@@ -1,8 +1,8 @@
-import {client, query} from "carbonql";
+import {Client, query} from "carbonql";
 import * as carbon from "carbonql";
 const jsondiff = require("jsondiffpatch");
 
-const c = client.Client.fromFile(<string>process.env.KUBECONFIG);
+const c = Client.fromFile(<string>process.env.KUBECONFIG);
 const history = c.apps.v1beta1.Deployment
   .list()
   // Get last two rollouts in the history of the `nginx` deployment.

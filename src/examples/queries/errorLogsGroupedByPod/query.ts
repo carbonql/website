@@ -1,7 +1,7 @@
-import {client, query} from "carbonql";
+import {Client, query} from "carbonql";
 import * as carbon from "carbonql";
 
-const c = client.Client.fromFile(<string>process.env.KUBECONFIG);
+const c = Client.fromFile(<string>process.env.KUBECONFIG);
 const podLogs = c.core.v1.Pod
   .list("default")
   // Retrieve logs for all pods, filter for logs with `ERROR:`.

@@ -1,7 +1,7 @@
-import {client, query} from "carbonql";
+import {Client, query} from "carbonql";
 import * as carbon from "carbonql";
 
-const c = client.Client.fromFile(<string>process.env.KUBECONFIG);
+const c = Client.fromFile(<string>process.env.KUBECONFIG);
 const pressured = c.core.v1.Pod.list()
   // Index pods by node name.
   .groupBy(pod => pod.spec.nodeName)
