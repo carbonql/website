@@ -1,3 +1,8 @@
+---
+tags:
+  - ops
+---
+
 ## Diff last two rollouts of an application
 
 Search for a [Deployment][deployment] named `"nginx"`, and obtain the last 2

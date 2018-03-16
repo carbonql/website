@@ -1,3 +1,8 @@
+---
+tags:
+  - ops
+---
+
 ## Find all Pod logs containing `"ERROR:"`
 
 Retrieve all [Pods][pod] in the `"default"` namespace, obtain their logs, and

@@ -18,6 +18,9 @@ export const query = graphql`
               content
             }
             childMarkdownRemark {
+              frontmatter {
+                tags
+              }
               html
             }
           }

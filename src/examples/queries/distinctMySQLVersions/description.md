@@ -1,3 +1,8 @@
+---
+tags:
+  - governance
+---
+
 ## Distinct versions of `mysql` container in cluster
 
 Search all running Kubernetes [Pods][pod] for containers that have the string
