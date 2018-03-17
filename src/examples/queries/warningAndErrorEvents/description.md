@@ -1,4 +1,13 @@
-## Aggregate cluster-wide error and warning Events into a report
+---
+tags:
+  - ops
+  - errors
+  - error
+  - warnings
+  - warning
+---
+
+### Aggregate cluster-wide error and warning Events into a report
 
 Search for all Kubernetes [Events][event] that are classified as `"Warning"` or
 `"Error"`, and report them grouped by the type of Kubernetes object that caused

@@ -1,6 +1,9 @@
 ---
 tags:
   - ops
+  - pod
+  - pods
+  - memory
 ---
 
 ### Find all Pods scheduled on nodes with high memory pressure

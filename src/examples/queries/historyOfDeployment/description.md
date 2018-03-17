@@ -1,6 +1,8 @@
 ---
 tags:
   - ops
+  - deployment
+  - deployments
 ---
 
 ### Diff last two rollouts of an application

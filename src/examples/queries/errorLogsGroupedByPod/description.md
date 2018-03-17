@@ -1,6 +1,9 @@
 ---
 tags:
   - ops
+  - logs
+  - error
+  - errors
 ---
 
 ### Find all Pod logs containing `"ERROR:"`

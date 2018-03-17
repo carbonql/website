@@ -1,6 +1,8 @@
 ---
 tags:
   - governance
+  - container
+  - containers
 ---
 
 ### Distinct versions of `mysql` container in cluster
