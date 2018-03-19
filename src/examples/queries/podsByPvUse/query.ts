@@ -21,4 +21,4 @@ const podsByClaim = c.core.v1.PersistentVolume
 podsByClaim.forEach(({pv, pods}) => {
   console.log(pv.metadata.name);
   pods.forEach(pod => console.log(`  ${pod.metadata.name}`));
-})
+});
