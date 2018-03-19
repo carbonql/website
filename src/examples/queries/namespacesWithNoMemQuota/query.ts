@@ -5,12 +5,10 @@ const noQuotas = c.core.v1.Namespace
   .list()
   .flatMap(ns =>
     c.core.v1.ResourceQuota
-      .list()
+      .list(ns.metadata.name)
       // Retrieve only ResourceQuotas that (1) apply to this namespace, and (2)
       // specify hard limits on memory.
-      .filter(rq =>
-        ns.metadata.name == rq.metadata.namespace &&
-        rq.spec.hard["limits.memory"] != null)
+      .filter(rq => rq.spec.hard["limits.memory"] != null)
       .toArray()
       .flatMap(rqs => rqs.length == 0 ? [ns] : []))
 
