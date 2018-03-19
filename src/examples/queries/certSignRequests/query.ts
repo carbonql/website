@@ -18,7 +18,7 @@ csrs.forEach(csrs => {
   csrs.forEach(({request}) => {
     const usages = request.spec.usages.sort().join(", ");
     const groups = request.spec.groups.sort().join(", ");
-    console.log(`\t${request.spec.username}\t[${usages}]\t[${groups}]`);
+    console.log(`  ${request.spec.username}\t[${usages}]\t[${groups}]`);
   });
 });
 
