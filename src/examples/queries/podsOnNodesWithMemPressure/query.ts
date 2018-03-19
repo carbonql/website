@@ -1,5 +1,4 @@
 import {Client, query} from "carbonql";
-import * as carbon from "carbonql";
 
 const c = Client.fromFile(<string>process.env.KUBECONFIG);
 const pressured = c.core.v1.Pod.list()

@@ -1,12 +1,11 @@
-import {Client, query} from "carbonql";
-import * as carbon from "carbonql";
+import {Client, query, transform} from "carbonql";
 
 const c = Client.fromFile(<string>process.env.KUBECONFIG);
 const podLogs = c.core.v1.Pod
   .list("default")
   // Retrieve logs for all pods, filter for logs with `ERROR:`.
   .flatMap(pod =>
-    carbon.core.v1.pod
+    transform.core.v1.pod
       .getLogs(c, pod)
       .filter(({logs}) => logs.includes("ERROR:"))
     )

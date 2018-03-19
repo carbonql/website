@@ -1,5 +1,5 @@
-import {Client, query, rbacAuthorization} from "carbonql";
-const rbac = rbacAuthorization
+import {Client, transform} from "carbonql";
+const rbac = transform.rbacAuthorization
 
 const c = Client.fromFile(<string>process.env.KUBECONFIG);
 const subjectsWithSecretAccess = c.rbacAuthorization.v1beta1.Role
