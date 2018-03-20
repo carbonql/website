@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ExampleList from '../components/ExampleList';
+import ExampleList from '../ExampleList';
 
 const IndexPage = () => (
   <div>

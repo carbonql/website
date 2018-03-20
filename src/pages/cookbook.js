@@ -1,9 +1,9 @@
 import React from 'react';
 
-import ExampleList from '../components/ExampleList';
+import ExampleList from '../ExampleList';
 
-const CookbookPage = ({ data: { allExample: {edges}} }) => (
-  <ExampleList examples={edges} />
+const CookbookPage = ({ data: { allExample, allMarkdownRemark} }) => (
+  <ExampleList examples={allExample.edges} headings={allMarkdownRemark.edges} />
 )
 
 export const query = graphql`
@@ -24,6 +24,17 @@ export const query = graphql`
               html
             }
           }
+        }
+      }
+    }
+    allMarkdownRemark(filter:{frontmatter:{tags:{in:["heading"]}}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            tags
+          }
+          html
         }
       }
     }

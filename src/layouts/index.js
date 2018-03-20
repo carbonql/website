@@ -1,17 +1,17 @@
-import 'bootstrap/scss/bootstrap.scss'
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import 'bootstrap/scss/bootstrap.scss';
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Footer from '../Footer';
+import Header from '../Header';
 
 import './markdown.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="CarbonQL"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },

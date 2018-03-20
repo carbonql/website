@@ -2,12 +2,9 @@ FROM node:alpine
 
 WORKDIR /code
 
-COPY yarn.lock /code
-
 RUN apk add --no-cache \
      alpine-sdk \
-  && npm install -g gatsby-cli \
-  && yarn
+  && npm install -g gatsby-cli
 
 COPY . /code
 
