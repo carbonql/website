@@ -18,6 +18,7 @@
     "gatsby-link": "^1.6.38",
     "gatsby-plugin-postcss-sass": "^1.0.18",
     "gatsby-plugin-react-helmet": "^2.0.6",
+    "gatsby-remark-autolink-headers": "^1.4.13",
     "gatsby-remark-prismjs": "^1.2.18",
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.36",
@@ -25,7 +26,8 @@
     "js-yaml": "^3.11.0",
     "lodash": "^4.17.5",
     "popper.js": "^1.14.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "tocbot": "^4.3.0"
   },
   "keywords": [
     "gatsby"
